@@ -1,0 +1,148 @@
+\doxysection{Network Class Reference}
+\hypertarget{classNetwork}{}\label{classNetwork}\index{Network@{Network}}
+
+
+Основной класс персептрона.  
+
+
+
+
+{\ttfamily \#include $<$Network.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classNetwork_ab94ab101a8234eb22789d51bd44a283c}{Init}} (\mbox{\hyperlink{structdata__Network}{data\+\_\+\+Network}} data)
+\item 
+void \mbox{\hyperlink{classNetwork_a29980dac183a16235e95dc5411523072}{Print\+Config}} ()
+\item 
+void \mbox{\hyperlink{classNetwork_aae3170236bbc334e9027a37064b56e58}{Set\+Input}} (double \texorpdfstring{$\ast$}{*}values)
+\item 
+double \mbox{\hyperlink{classNetwork_a90c32fc3d02a099d1e0fa39705d11d56}{Forward\+Feed}} ()
+\item 
+int \mbox{\hyperlink{classNetwork_a78fc0626d6b745842375101ad366d980}{Search\+Max\+Index}} (double \texorpdfstring{$\ast$}{*}value)
+\item 
+void \mbox{\hyperlink{classNetwork_a683c63c3668a05a61f3f8dc3436898b1}{Print\+Values}} (int L)
+\item 
+void \mbox{\hyperlink{classNetwork_a5289a4fb8b298fb6c7553bd98750fb49}{Back\+Propogation}} (double expect)
+\item 
+void \mbox{\hyperlink{classNetwork_ae544720f9f75515f7ba67a98c4f35163}{Weights\+Update}} (double lr)
+\item 
+void \mbox{\hyperlink{classNetwork_af3f5ce6972652c5aeb2abdaddae671dd}{Save\+Weights}} ()
+\item 
+void \mbox{\hyperlink{classNetwork_a93eeaee5cd56f5cdaf8c3783c7433006}{Read\+Weights}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Основной класс персептрона. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classNetwork_a5289a4fb8b298fb6c7553bd98750fb49}\index{Network@{Network}!BackPropogation@{BackPropogation}}
+\index{BackPropogation@{BackPropogation}!Network@{Network}}
+\doxysubsubsection{\texorpdfstring{BackPropogation()}{BackPropogation()}}
+{\footnotesize\ttfamily \label{classNetwork_a5289a4fb8b298fb6c7553bd98750fb49} 
+void Network\+::\+Back\+Propogation (\begin{DoxyParamCaption}\item[{double}]{expect}{}\end{DoxyParamCaption})}
+
+Алгоритм обратного распространения ошибки. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em expect} & Правильное значение\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classNetwork_a90c32fc3d02a099d1e0fa39705d11d56}\index{Network@{Network}!ForwardFeed@{ForwardFeed}}
+\index{ForwardFeed@{ForwardFeed}!Network@{Network}}
+\doxysubsubsection{\texorpdfstring{ForwardFeed()}{ForwardFeed()}}
+{\footnotesize\ttfamily \label{classNetwork_a90c32fc3d02a099d1e0fa39705d11d56} 
+double Network\+::\+Forward\+Feed (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Проход вперед. Передача сигнала от первого слоя к последнему.
+
+\begin{DoxyReturn}{Returns}
+Возвращает индекс максимального значения с последнего слоя (т.\+е. наиболее вероятный ответ)
+\end{DoxyReturn}
+\Hypertarget{classNetwork_ab94ab101a8234eb22789d51bd44a283c}\index{Network@{Network}!Init@{Init}}
+\index{Init@{Init}!Network@{Network}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily \label{classNetwork_ab94ab101a8234eb22789d51bd44a283c} 
+void Network\+::\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdata__Network}{data\+\_\+\+Network}}}]{data}{}\end{DoxyParamCaption})}
+
+Инициализация персептрона случайными значениями. Значения bios инициализируются единицами.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em data} & Параметры конфигурации персептрона (количество слоев и их размеры)\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classNetwork_a29980dac183a16235e95dc5411523072}\index{Network@{Network}!PrintConfig@{PrintConfig}}
+\index{PrintConfig@{PrintConfig}!Network@{Network}}
+\doxysubsubsection{\texorpdfstring{PrintConfig()}{PrintConfig()}}
+{\footnotesize\ttfamily \label{classNetwork_a29980dac183a16235e95dc5411523072} 
+void Network\+::\+Print\+Config (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Печать конфигурации нейросети.\Hypertarget{classNetwork_a683c63c3668a05a61f3f8dc3436898b1}\index{Network@{Network}!PrintValues@{PrintValues}}
+\index{PrintValues@{PrintValues}!Network@{Network}}
+\doxysubsubsection{\texorpdfstring{PrintValues()}{PrintValues()}}
+{\footnotesize\ttfamily \label{classNetwork_a683c63c3668a05a61f3f8dc3436898b1} 
+void Network\+::\+Print\+Values (\begin{DoxyParamCaption}\item[{int}]{L}{}\end{DoxyParamCaption})}
+
+Метод для печати значений нейронов на слое L. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em L} & Номер слоя\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classNetwork_a93eeaee5cd56f5cdaf8c3783c7433006}\index{Network@{Network}!ReadWeights@{ReadWeights}}
+\index{ReadWeights@{ReadWeights}!Network@{Network}}
+\doxysubsubsection{\texorpdfstring{ReadWeights()}{ReadWeights()}}
+{\footnotesize\ttfamily \label{classNetwork_a93eeaee5cd56f5cdaf8c3783c7433006} 
+void Network\+::\+Read\+Weights (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Чтение значений весов.\Hypertarget{classNetwork_af3f5ce6972652c5aeb2abdaddae671dd}\index{Network@{Network}!SaveWeights@{SaveWeights}}
+\index{SaveWeights@{SaveWeights}!Network@{Network}}
+\doxysubsubsection{\texorpdfstring{SaveWeights()}{SaveWeights()}}
+{\footnotesize\ttfamily \label{classNetwork_af3f5ce6972652c5aeb2abdaddae671dd} 
+void Network\+::\+Save\+Weights (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Запись значений весов.\Hypertarget{classNetwork_a78fc0626d6b745842375101ad366d980}\index{Network@{Network}!SearchMaxIndex@{SearchMaxIndex}}
+\index{SearchMaxIndex@{SearchMaxIndex}!Network@{Network}}
+\doxysubsubsection{\texorpdfstring{SearchMaxIndex()}{SearchMaxIndex()}}
+{\footnotesize\ttfamily \label{classNetwork_a78fc0626d6b745842375101ad366d980} 
+int Network\+::\+Search\+Max\+Index (\begin{DoxyParamCaption}\item[{double \texorpdfstring{$\ast$}{*}}]{value}{}\end{DoxyParamCaption})}
+
+Поиск максимального значения в векторе. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em value} & Вектор значений \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Возвращает индекс максимального значения вектора.
+\end{DoxyReturn}
+\Hypertarget{classNetwork_aae3170236bbc334e9027a37064b56e58}\index{Network@{Network}!SetInput@{SetInput}}
+\index{SetInput@{SetInput}!Network@{Network}}
+\doxysubsubsection{\texorpdfstring{SetInput()}{SetInput()}}
+{\footnotesize\ttfamily \label{classNetwork_aae3170236bbc334e9027a37064b56e58} 
+void Network\+::\+Set\+Input (\begin{DoxyParamCaption}\item[{double \texorpdfstring{$\ast$}{*}}]{values}{}\end{DoxyParamCaption})}
+
+Метод для подачи сигнала на вход сети.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em values} & Вектор с сигналом, который подается на вход.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classNetwork_ae544720f9f75515f7ba67a98c4f35163}\index{Network@{Network}!WeightsUpdate@{WeightsUpdate}}
+\index{WeightsUpdate@{WeightsUpdate}!Network@{Network}}
+\doxysubsubsection{\texorpdfstring{WeightsUpdate()}{WeightsUpdate()}}
+{\footnotesize\ttfamily \label{classNetwork_ae544720f9f75515f7ba67a98c4f35163} 
+void Network\+::\+Weights\+Update (\begin{DoxyParamCaption}\item[{double}]{lr}{}\end{DoxyParamCaption})}
+
+Обновление весов. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em lr} & Значение learning rate.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/mariya/\+Documents/\+Uni/\+Algorithms2/\+Project/src/\mbox{\hyperlink{Network_8h}{Network.\+h}}\item 
+/home/mariya/\+Documents/\+Uni/\+Algorithms2/\+Project/src/\mbox{\hyperlink{Network_8cpp}{Network.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,157 @@
+\doxysection{Matrix Class Reference}
+\hypertarget{classMatrix}{}\label{classMatrix}\index{Matrix@{Matrix}}
+
+
+Класс для создания и работы с матрицами.  
+
+
+
+
+{\ttfamily \#include $<$Matrix.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classMatrix_a81a36e7aa4764ac431f3383736da6a93}{Init}} (int row, int col)
+\item 
+void \mbox{\hyperlink{classMatrix_aedd6f31bc1a30a2c98cee0dc3d9b89f4}{Rand}} ()
+\item 
+double \& \mbox{\hyperlink{classMatrix_a83a1c6c6f2f7c88a72a7ee98cae90c24}{operator()}} (int i, int j)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classMatrix_a3c3a026001b7676c3f0c4f777d39f6ac}{Multi}} (const \mbox{\hyperlink{classMatrix}{Matrix}} \&m, const double \texorpdfstring{$\ast$}{*}neuron, int n, double \texorpdfstring{$\ast$}{*}out)
+\item 
+static void \mbox{\hyperlink{classMatrix_a42c883ffbe0a475d0bf4e9c06c7da5c3}{Multi\+\_\+T}} (const \mbox{\hyperlink{classMatrix}{Matrix}} \&m, const double \texorpdfstring{$\ast$}{*}neuron, int n, double \texorpdfstring{$\ast$}{*}out)
+\item 
+static void \mbox{\hyperlink{classMatrix_a1c2d01206a6d93bd2c22e9fe94b29a53}{Sum\+Vector}} (double \texorpdfstring{$\ast$}{*}a, const double \texorpdfstring{$\ast$}{*}b, int n)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{classMatrix_a5acbf9f1ba6d871be2ad3a0cdadf8815}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{classMatrix}{Matrix}} \&m)
+\item 
+std\+::istream \& \mbox{\hyperlink{classMatrix_a0f8f162e6beb0d12bc75c4642471bca9}{operator$>$$>$}} (std\+::istream \&is, \mbox{\hyperlink{classMatrix}{Matrix}} \&m)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс для создания и работы с матрицами. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classMatrix_a81a36e7aa4764ac431f3383736da6a93}\index{Matrix@{Matrix}!Init@{Init}}
+\index{Init@{Init}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily \label{classMatrix_a81a36e7aa4764ac431f3383736da6a93} 
+void Matrix\+::\+Init (\begin{DoxyParamCaption}\item[{int}]{row}{, }\item[{int}]{col}{}\end{DoxyParamCaption})}
+
+Метод для инициализации матрицы (все заполняется нулями).
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em row} & Количество строк матрицы \\
+\hline
+\mbox{\texttt{ in}}  & {\em col} & Количество столбцов\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classMatrix_a3c3a026001b7676c3f0c4f777d39f6ac}\index{Matrix@{Matrix}!Multi@{Multi}}
+\index{Multi@{Multi}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{Multi()}{Multi()}}
+{\footnotesize\ttfamily \label{classMatrix_a3c3a026001b7676c3f0c4f777d39f6ac} 
+void Matrix\+::\+Multi (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMatrix}{Matrix}} \&}]{m}{, }\item[{const double \texorpdfstring{$\ast$}{*}}]{neuron}{, }\item[{int}]{n}{, }\item[{double \texorpdfstring{$\ast$}{*}}]{out}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Метод для умножения матрицы на вектор.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em m} & Ссылка на матрицы \\
+\hline
+\mbox{\texttt{ in}}  & {\em neuron} & Указатель на вектор \\
+\hline
+\mbox{\texttt{ in}}  & {\em n} & Длина вектора \\
+\hline
+\mbox{\texttt{ out}}  & {\em out} & Указатель на результат умножения\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classMatrix_a42c883ffbe0a475d0bf4e9c06c7da5c3}\index{Matrix@{Matrix}!Multi\_T@{Multi\_T}}
+\index{Multi\_T@{Multi\_T}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{Multi\_T()}{Multi\_T()}}
+{\footnotesize\ttfamily \label{classMatrix_a42c883ffbe0a475d0bf4e9c06c7da5c3} 
+void Matrix\+::\+Multi\+\_\+T (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMatrix}{Matrix}} \&}]{m}{, }\item[{const double \texorpdfstring{$\ast$}{*}}]{neuron}{, }\item[{int}]{n}{, }\item[{double \texorpdfstring{$\ast$}{*}}]{out}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Метод для умножения транспонированной матрицы на вектор.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em m} & Ссылка на матрицу \\
+\hline
+\mbox{\texttt{ in}}  & {\em neuron} & Указатель на вектор \\
+\hline
+\mbox{\texttt{ in}}  & {\em n} & Длина вектора \\
+\hline
+\mbox{\texttt{ out}}  & {\em out} & Указатель на результат умножения\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classMatrix_a83a1c6c6f2f7c88a72a7ee98cae90c24}\index{Matrix@{Matrix}!operator()@{operator()}}
+\index{operator()@{operator()}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily \label{classMatrix_a83a1c6c6f2f7c88a72a7ee98cae90c24} 
+double \& Matrix\+::operator() (\begin{DoxyParamCaption}\item[{int}]{i}{, }\item[{int}]{j}{}\end{DoxyParamCaption})}
+
+Перезагрузка оператора () для удобного доступа к элементам матрицы..
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i} & Номер строки \\
+\hline
+\mbox{\texttt{ in}}  & {\em j} & Номер столбца\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ссылку на элемент матрицы
+\end{DoxyReturn}
+\Hypertarget{classMatrix_aedd6f31bc1a30a2c98cee0dc3d9b89f4}\index{Matrix@{Matrix}!Rand@{Rand}}
+\index{Rand@{Rand}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{Rand()}{Rand()}}
+{\footnotesize\ttfamily \label{classMatrix_aedd6f31bc1a30a2c98cee0dc3d9b89f4} 
+void Matrix\+::\+Rand (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Метод для заполнения матрицы случайными значениями.\Hypertarget{classMatrix_a1c2d01206a6d93bd2c22e9fe94b29a53}\index{Matrix@{Matrix}!SumVector@{SumVector}}
+\index{SumVector@{SumVector}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{SumVector()}{SumVector()}}
+{\footnotesize\ttfamily \label{classMatrix_a1c2d01206a6d93bd2c22e9fe94b29a53} 
+void Matrix\+::\+Sum\+Vector (\begin{DoxyParamCaption}\item[{double \texorpdfstring{$\ast$}{*}}]{a}{, }\item[{const double \texorpdfstring{$\ast$}{*}}]{b}{, }\item[{int}]{n}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Метод для суммирования двух векторов (a и b).
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em a} & Вектора a \\
+\hline
+\mbox{\texttt{ in}}  & {\em b} & Вектор b \\
+\hline
+\mbox{\texttt{ in}}  & {\em n} & Длина векторов\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{classMatrix_a5acbf9f1ba6d871be2ad3a0cdadf8815}\index{Matrix@{Matrix}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily \label{classMatrix_a5acbf9f1ba6d871be2ad3a0cdadf8815} 
+std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os}{, }\item[{const \mbox{\hyperlink{classMatrix}{Matrix}} \&}]{m}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+\Hypertarget{classMatrix_a0f8f162e6beb0d12bc75c4642471bca9}\index{Matrix@{Matrix}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily \label{classMatrix_a0f8f162e6beb0d12bc75c4642471bca9} 
+std\+::istream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is}{, }\item[{\mbox{\hyperlink{classMatrix}{Matrix}} \&}]{m}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/mariya/\+Documents/\+Uni/\+Algorithms2/\+Project/src/\mbox{\hyperlink{Matrix_8h}{Matrix.\+h}}\item 
+/home/mariya/\+Documents/\+Uni/\+Algorithms2/\+Project/src/\mbox{\hyperlink{Matrix_8cpp}{Matrix.\+cpp}}\end{DoxyCompactItemize}

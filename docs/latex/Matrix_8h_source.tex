@@ -1,0 +1,25 @@
+\doxysection{Matrix.\+h}
+\hypertarget{Matrix_8h_source}{}\label{Matrix_8h_source}\index{/home/mariya/Documents/Uni/Algorithms2/Project/src/Matrix.h@{/home/mariya/Documents/Uni/Algorithms2/Project/src/Matrix.h}}
+\mbox{\hyperlink{Matrix_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classMatrix}{Matrix}}}
+\DoxyCodeLine{00008\ \{}
+\DoxyCodeLine{00009\ \ \ \textcolor{keywordtype}{double}**\ matrix;}
+\DoxyCodeLine{00010\ \ \ \textcolor{keywordtype}{int}\ row;}
+\DoxyCodeLine{00011\ \ \ \textcolor{keywordtype}{int}\ col;}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00014\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMatrix_a81a36e7aa4764ac431f3383736da6a93}{Init}}(\textcolor{keywordtype}{int}\ row,\ \textcolor{keywordtype}{int}\ col);}
+\DoxyCodeLine{00015\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMatrix_aedd6f31bc1a30a2c98cee0dc3d9b89f4}{Rand}}();}
+\DoxyCodeLine{00016\ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMatrix_a3c3a026001b7676c3f0c4f777d39f6ac}{Multi}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classMatrix}{Matrix}}\&\ m,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}*\ neuron,\ \textcolor{keywordtype}{int}\ n,\ \textcolor{keywordtype}{double}*\ out);}
+\DoxyCodeLine{00017\ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMatrix_a42c883ffbe0a475d0bf4e9c06c7da5c3}{Multi\_T}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classMatrix}{Matrix}}\&\ m,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}*\ neuron,\ \textcolor{keywordtype}{int}\ n,\ \textcolor{keywordtype}{double}*\ out);}
+\DoxyCodeLine{00018\ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMatrix_a1c2d01206a6d93bd2c22e9fe94b29a53}{SumVector}}(\textcolor{keywordtype}{double}*\ a,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}*\ b,\ \textcolor{keywordtype}{int}\ n);}
+\DoxyCodeLine{00019\ \ \ \textcolor{keywordtype}{double}\&\ \mbox{\hyperlink{classMatrix_a83a1c6c6f2f7c88a72a7ee98cae90c24}{operator\ ()}}(\textcolor{keywordtype}{int}\ i,\ \textcolor{keywordtype}{int}\ j);}
+\DoxyCodeLine{00020\ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ \mbox{\hyperlink{classMatrix_a5acbf9f1ba6d871be2ad3a0cdadf8815}{operator\ <<\ }}(std::ostream\&\ os,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classMatrix}{Matrix}}\&\ m);}
+\DoxyCodeLine{00021\ \ \ \textcolor{keyword}{friend}\ std::istream\&\ \mbox{\hyperlink{classMatrix_a0f8f162e6beb0d12bc75c4642471bca9}{operator\ >>\ }}(std::istream\&\ is,\ \mbox{\hyperlink{classMatrix}{Matrix}}\&\ m);}
+\DoxyCodeLine{00022\ \};}
+
+\end{DoxyCode}

@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>
 #include <iostream>
-#include "../src/ActivateFunction.h"
+#include "../src/Utils.h"
 
 TEST(ActivateFunctionTest, CatchInitError) {
 	ActivateFunction actFunc;

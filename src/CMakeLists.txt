@@ -3,5 +3,5 @@ add_compile_options(
     -Wextra
 ) # Опции компилятора
 
-add_executable(Project ./ActivateFunction.cpp ./Matrix.cpp ./Network.cpp ./Reader.cpp ./main.cpp)
+add_executable(Project ./Utils.cpp ./Matrix.cpp ./Network.cpp ./Reader.cpp ./main.cpp)
 

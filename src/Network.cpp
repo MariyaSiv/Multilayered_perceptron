@@ -7,8 +7,11 @@ void Network::Init(data_Network data) {
   
   \param[in] data Параметры конфигурации персептрона (количество слоев и их размеры)
   */
-
-  actFunc.set();
+  if (autoset) {
+    actFunc.autoset();
+  } else {
+    actFunc.set();
+  }
   srand(time(NULL));
   L = data.L;
   size = new int[L];
@@ -64,7 +67,7 @@ void Network::SetInput(double* values) {
   }
 }
 
-double Network::ForwardFeed() {
+int Network::ForwardFeed() {
   /**
   \brief Проход вперед. Передача сигнала от первого слоя к последнему.
   
@@ -156,7 +159,7 @@ void Network::SaveWeights() {
   \brief Запись значений весов.
   */
   ofstream fout; 
-  fout.open("../data/weights.txt");
+  fout.open(WEIGHTPATH);
   if (!fout.is_open()) {
     cout << "Ошибка чтения файла\n";
     system("pause");
@@ -180,7 +183,7 @@ void Network::ReadWeights() {
   \brief Чтение значений весов.
   */
   ifstream fin; 
-  fin.open("../data/weights.txt");
+  fin.open(WEIGHTPATH);
   if (!fin.is_open()) {
     cout << "Ошибка записи в файла\n";
     system("pause");

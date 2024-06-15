@@ -18,7 +18,7 @@ target_link_libraries(matrix_test
 
 add_test(matrix_tests matrix_test)
 
-add_executable(activef_test ../src/ActivateFunction.cpp ./activatef.cpp)
+add_executable(activef_test ../src/Utils.cpp ./activatef.cpp)
 
 target_link_libraries(activef_test
  PRIVATE
@@ -26,3 +26,13 @@ target_link_libraries(activef_test
 )
 
 add_test(activef_test activef_test)
+
+add_executable(network_test ../src/Utils.cpp ../src/Matrix.cpp ../src/Network.cpp ../src/Reader.cpp ./network.cpp)
+
+target_link_libraries(network_test
+ PRIVATE
+  GTest::GTest
+)
+
+add_test(network_test network_test)
+

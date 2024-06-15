@@ -1,5 +1,43 @@
-#include "ActivateFunction.h"
-#include <cmath>
+#include "Utils.h"
+
+
+void confusion_Matrix::Init() {
+  /**
+  \brief Инициализация confusion matrix
+  */
+    for (int i=0; i<10; i++) {
+		    for (int j=0; j<10; j++) matrix[i][j] = 0;
+	  }
+}
+
+int& confusion_Matrix::operator()(int i, int j) {
+  /**
+  \brief Перезагрузка оператора () для удобного доступа к элементам матрицы.
+  
+  \param[in] i Номер строки
+  \param[in] j Номер столбца
+
+  \return Ссылку на элемент матрицы
+  */
+  return matrix[i][j];
+}
+
+void confusion_Matrix::Print() {
+  /**
+  \brief Печать confusion matrix
+  */
+    cout << setw(4) << "0" << setw(4) << "1" << setw(4) << "2" << setw(4);
+    cout << "3" << setw(4) << "4" << setw(4) << "5" << setw(4) << "6" << setw(4);
+    cout << "7" << setw(4) << "8" << setw(4) << "9" << endl;
+	  for (int i=0; i<10; i++){
+		  cout << i << ": ";
+		  for (int j=0; j<10; j++) {
+			  cout << setw(4) << matrix[i][j] << " ";
+		  }
+		cout << endl;
+		}
+}
+
 
 void ActivateFunction::set() {
   /**
@@ -7,7 +45,7 @@ void ActivateFunction::set() {
   \warning Реализована только функция ReLu.
   \throw std::runtime_error Значение actFunc не задано.
  */
-  std::cout << "Функция активации (1 - Sigmoid, 2 - ReLU)\n";
+  std::cout << "Функция активации (2 - ReLU): ";
   int tmp;
   std::cin >> tmp;
   switch(tmp) {
@@ -22,6 +60,16 @@ void ActivateFunction::set() {
       break;
   }
 };
+
+void ActivateFunction::autoset() {
+  /**
+  \brief Метод для задания функции активации.
+  \warning Реализована только функция ReLu.
+  \throw std::runtime_error Значение actFunc не задано.
+ */
+  actFunc = ReLU;
+};
+
 
 void ActivateFunction::use(double* value, int n) {
   /**

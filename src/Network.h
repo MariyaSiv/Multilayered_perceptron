@@ -1,8 +1,9 @@
 #pragma once
-#include "ActivateFunction.h"
+#include "Utils.h"
 #include "Matrix.h"
 #include <fstream>
 using namespace std;
+
 
 /**
 \brief Структура для хранения конфигурации для нейросети.
@@ -26,11 +27,14 @@ class Network {
   double* neurons_bios_val;
 
 public:
+  string WEIGHTPATH = "../data/weights.txt";
+  bool autoset = false;
+
   void Init(data_Network data);
   void PrintConfig();
   void SetInput(double* values);
 
-  double ForwardFeed();
+  int ForwardFeed();
   int SearchMaxIndex(double* value);
   void PrintValues(int L);
 

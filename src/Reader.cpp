@@ -7,7 +7,7 @@ data_Network ReadDataNetwork(string path) {
   if (!fin.is_open()) {
     cout << "Error\n"; 
   } else {
-    cout << path << " загрузка...\n";
+    cout << path << " загрузка.\n";
   }
   string tmp;
   int L;
@@ -32,6 +32,7 @@ data_info* ReadData(string path, const data_Network& data_NW, int &examples){
   ifstream csvread;
   csvread.open(path, ios::in);
   if(csvread){
+    cout << path << " загрузка." << endl;
     string s;
     int data_pt = 0;
     while(getline(csvread, s)) {
@@ -51,9 +52,9 @@ data_info* ReadData(string path, const data_Network& data_NW, int &examples){
       data_pt++;
     }
     csvread.close();
-    cout << path << " загружен.." << endl;
+    cout << path << " загружен." << endl;
   } else {
-    cout << "Ошибка!!" << endl;
+    cout << "Ошибка при чтении " << path << endl;
   }
   return data;
 }

@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['main_0',['main',['../main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main.cpp']]],
-  ['multi_1',['Multi',['../classMatrix.html#a3c3a026001b7676c3f0c4f777d39f6ac',1,'Matrix']]],
-  ['multi_5ft_2',['Multi_T',['../classMatrix.html#a42c883ffbe0a475d0bf4e9c06c7da5c3',1,'Matrix']]]
+  ['init_0',['Init',['../classMatrix.html#a81a36e7aa4764ac431f3383736da6a93',1,'Matrix::Init()'],['../classNetwork.html#ab94ab101a8234eb22789d51bd44a283c',1,'Network::Init()'],['../structconfusion__Matrix.html#a5fd0d58424acd9ac8490acad4c36c973',1,'confusion_Matrix::Init()']]]
 ];

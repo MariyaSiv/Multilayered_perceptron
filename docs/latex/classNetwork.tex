@@ -18,7 +18,7 @@ void \mbox{\hyperlink{classNetwork_a29980dac183a16235e95dc5411523072}{Print\+Con
 \item 
 void \mbox{\hyperlink{classNetwork_aae3170236bbc334e9027a37064b56e58}{Set\+Input}} (double \texorpdfstring{$\ast$}{*}values)
 \item 
-double \mbox{\hyperlink{classNetwork_a90c32fc3d02a099d1e0fa39705d11d56}{Forward\+Feed}} ()
+int \mbox{\hyperlink{classNetwork_a5937725e32df92ed792fe2cf56d8c765}{Forward\+Feed}} ()
 \item 
 int \mbox{\hyperlink{classNetwork_a78fc0626d6b745842375101ad366d980}{Search\+Max\+Index}} (double \texorpdfstring{$\ast$}{*}value)
 \item 
@@ -31,6 +31,13 @@ void \mbox{\hyperlink{classNetwork_ae544720f9f75515f7ba67a98c4f35163}{Weights\+U
 void \mbox{\hyperlink{classNetwork_af3f5ce6972652c5aeb2abdaddae671dd}{Save\+Weights}} ()
 \item 
 void \mbox{\hyperlink{classNetwork_a93eeaee5cd56f5cdaf8c3783c7433006}{Read\+Weights}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classNetwork_aec75068f761f7105e5d87f9a7dc2ede2}{WEIGHTPATH}} = "{}../data/weights.\+txt"{}
+\item 
+bool \mbox{\hyperlink{classNetwork_a49ec1f2899fa65cc4abd5e1aaa1dfb5c}{autoset}} = false
 \end{DoxyCompactItemize}
 
 
@@ -49,11 +56,11 @@ void Network\+::\+Back\+Propogation (\begin{DoxyParamCaption}\item[{double}]{exp
 \mbox{\texttt{ in}}  & {\em expect} & Правильное значение\\
 \hline
 \end{DoxyParams}
-\Hypertarget{classNetwork_a90c32fc3d02a099d1e0fa39705d11d56}\index{Network@{Network}!ForwardFeed@{ForwardFeed}}
+\Hypertarget{classNetwork_a5937725e32df92ed792fe2cf56d8c765}\index{Network@{Network}!ForwardFeed@{ForwardFeed}}
 \index{ForwardFeed@{ForwardFeed}!Network@{Network}}
 \doxysubsubsection{\texorpdfstring{ForwardFeed()}{ForwardFeed()}}
-{\footnotesize\ttfamily \label{classNetwork_a90c32fc3d02a099d1e0fa39705d11d56} 
-double Network\+::\+Forward\+Feed (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classNetwork_a5937725e32df92ed792fe2cf56d8c765} 
+int Network\+::\+Forward\+Feed (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
 Проход вперед. Передача сигнала от первого слоя к последнему.
 
@@ -140,6 +147,21 @@ void Network\+::\+Weights\+Update (\begin{DoxyParamCaption}\item[{double}]{lr}{}
 \mbox{\texttt{ in}}  & {\em lr} & Значение learning rate.\\
 \hline
 \end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classNetwork_a49ec1f2899fa65cc4abd5e1aaa1dfb5c}\index{Network@{Network}!autoset@{autoset}}
+\index{autoset@{autoset}!Network@{Network}}
+\doxysubsubsection{\texorpdfstring{autoset}{autoset}}
+{\footnotesize\ttfamily \label{classNetwork_a49ec1f2899fa65cc4abd5e1aaa1dfb5c} 
+bool Network\+::autoset = false}
+
+\Hypertarget{classNetwork_aec75068f761f7105e5d87f9a7dc2ede2}\index{Network@{Network}!WEIGHTPATH@{WEIGHTPATH}}
+\index{WEIGHTPATH@{WEIGHTPATH}!Network@{Network}}
+\doxysubsubsection{\texorpdfstring{WEIGHTPATH}{WEIGHTPATH}}
+{\footnotesize\ttfamily \label{classNetwork_aec75068f761f7105e5d87f9a7dc2ede2} 
+string Network\+::\+WEIGHTPATH = "{}../data/weights.\+txt"{}}
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

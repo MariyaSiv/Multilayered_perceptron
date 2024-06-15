@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['operator_28_29_0',['operator()',['../classMatrix.html#a83a1c6c6f2f7c88a72a7ee98cae90c24',1,'Matrix']]],
-  ['operator_3c_3c_1',['operator&lt;&lt;',['../Matrix_8cpp.html#a5acbf9f1ba6d871be2ad3a0cdadf8815',1,'Matrix.cpp']]],
-  ['operator_3e_3e_2',['operator&gt;&gt;',['../Matrix_8cpp.html#a0f8f162e6beb0d12bc75c4642471bca9',1,'Matrix.cpp']]]
+  ['main_0',['main',['../main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main.cpp']]],
+  ['multi_1',['Multi',['../classMatrix.html#a3c3a026001b7676c3f0c4f777d39f6ac',1,'Matrix']]],
+  ['multi_5ft_2',['Multi_T',['../classMatrix.html#a42c883ffbe0a475d0bf4e9c06c7da5c3',1,'Matrix']]]
 ];

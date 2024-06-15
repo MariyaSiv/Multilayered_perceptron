@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['network_0',['Network',['../classNetwork.html',1,'']]]
+  ['matrix_0',['Matrix',['../classMatrix.html',1,'']]]
 ];

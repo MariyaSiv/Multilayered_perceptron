@@ -108,12 +108,14 @@ $(function(){initNavTree('classActivateFunction.html',''); initResizable(true); 
 <p>Класс для задания функции активации  
  <a href="#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="ActivateFunction_8h_source.html">ActivateFunction.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="Utils_8h_source.html">Utils.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a34859ab837b7dd029e76e2348674c796" id="r_a34859ab837b7dd029e76e2348674c796"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34859ab837b7dd029e76e2348674c796">set</a> ()</td></tr>
 <tr class="separator:a34859ab837b7dd029e76e2348674c796"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add606abf2754b6e106e16476a37b2472" id="r_add606abf2754b6e106e16476a37b2472"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add606abf2754b6e106e16476a37b2472">autoset</a> ()</td></tr>
+<tr class="separator:add606abf2754b6e106e16476a37b2472"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1cfd32f9c2131f34aca5a26aab8dc8d9" id="r_a1cfd32f9c2131f34aca5a26aab8dc8d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1cfd32f9c2131f34aca5a26aab8dc8d9">use</a> (double *value, int n)</td></tr>
 <tr class="separator:a1cfd32f9c2131f34aca5a26aab8dc8d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d671bb3e862ec537144eefde3a156a2" id="r_a6d671bb3e862ec537144eefde3a156a2"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d671bb3e862ec537144eefde3a156a2">useDer</a> (double value)</td></tr>
@@ -121,13 +123,37 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a075013f59ae449170d6455f98a5373fb" id="r_a075013f59ae449170d6455f98a5373fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ActivateFunction_8h.html#a7ca203c77ee11fc0157a88dfd4e5f245">activateFunc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a075013f59ae449170d6455f98a5373fb">actFunc</a></td></tr>
+<tr class="memitem:a075013f59ae449170d6455f98a5373fb" id="r_a075013f59ae449170d6455f98a5373fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Utils_8h.html#a7ca203c77ee11fc0157a88dfd4e5f245">activateFunc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a075013f59ae449170d6455f98a5373fb">actFunc</a></td></tr>
 <tr class="memdesc:a075013f59ae449170d6455f98a5373fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поле для перечисления функции активации.  <br /></td></tr>
 <tr class="separator:a075013f59ae449170d6455f98a5373fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Класс для задания функции активации </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="add606abf2754b6e106e16476a37b2472" name="add606abf2754b6e106e16476a37b2472"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add606abf2754b6e106e16476a37b2472">&#9670;&#160;</a></span>autoset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ActivateFunction::autoset </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Метод для задания функции активации. </p><dl class="section warning"><dt>Warning</dt><dd>Реализована только функция ReLu. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::runtime_error</td><td>Значение actFunc не задано.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a34859ab837b7dd029e76e2348674c796" name="a34859ab837b7dd029e76e2348674c796"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a34859ab837b7dd029e76e2348674c796">&#9670;&#160;</a></span>set()</h2>
 
@@ -225,7 +251,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ActivateFunction_8h.html#a7ca203c77ee11fc0157a88dfd4e5f245">activateFunc</a> ActivateFunction::actFunc</td>
+          <td class="memname"><a class="el" href="Utils_8h.html#a7ca203c77ee11fc0157a88dfd4e5f245">activateFunc</a> ActivateFunction::actFunc</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -235,8 +261,8 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/mariya/Documents/Uni/Algorithms2/Project/src/<a class="el" href="ActivateFunction_8h_source.html">ActivateFunction.h</a></li>
-<li>/home/mariya/Documents/Uni/Algorithms2/Project/src/<a class="el" href="ActivateFunction_8cpp.html">ActivateFunction.cpp</a></li>
+<li>/home/mariya/Documents/Uni/Algorithms2/Project/src/<a class="el" href="Utils_8h_source.html">Utils.h</a></li>
+<li>/home/mariya/Documents/Uni/Algorithms2/Project/src/<a class="el" href="Utils_8cpp.html">Utils.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -99,6 +99,7 @@ $(function(){initNavTree('classNetwork.html',''); initResizable(true); });
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classNetwork-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Network Class Reference</div></div>
 </div><!--header-->
@@ -117,8 +118,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a29980dac183a16235e95dc5411523072"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae3170236bbc334e9027a37064b56e58" id="r_aae3170236bbc334e9027a37064b56e58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae3170236bbc334e9027a37064b56e58">SetInput</a> (double *values)</td></tr>
 <tr class="separator:aae3170236bbc334e9027a37064b56e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90c32fc3d02a099d1e0fa39705d11d56" id="r_a90c32fc3d02a099d1e0fa39705d11d56"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90c32fc3d02a099d1e0fa39705d11d56">ForwardFeed</a> ()</td></tr>
-<tr class="separator:a90c32fc3d02a099d1e0fa39705d11d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5937725e32df92ed792fe2cf56d8c765" id="r_a5937725e32df92ed792fe2cf56d8c765"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5937725e32df92ed792fe2cf56d8c765">ForwardFeed</a> ()</td></tr>
+<tr class="separator:a5937725e32df92ed792fe2cf56d8c765"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78fc0626d6b745842375101ad366d980" id="r_a78fc0626d6b745842375101ad366d980"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78fc0626d6b745842375101ad366d980">SearchMaxIndex</a> (double *value)</td></tr>
 <tr class="separator:a78fc0626d6b745842375101ad366d980"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a683c63c3668a05a61f3f8dc3436898b1" id="r_a683c63c3668a05a61f3f8dc3436898b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a683c63c3668a05a61f3f8dc3436898b1">PrintValues</a> (int L)</td></tr>
@@ -131,6 +132,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af3f5ce6972652c5aeb2abdaddae671dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93eeaee5cd56f5cdaf8c3783c7433006" id="r_a93eeaee5cd56f5cdaf8c3783c7433006"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93eeaee5cd56f5cdaf8c3783c7433006">ReadWeights</a> ()</td></tr>
 <tr class="separator:a93eeaee5cd56f5cdaf8c3783c7433006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:aec75068f761f7105e5d87f9a7dc2ede2" id="r_aec75068f761f7105e5d87f9a7dc2ede2"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec75068f761f7105e5d87f9a7dc2ede2">WEIGHTPATH</a> = &quot;../data/weights.txt&quot;</td></tr>
+<tr class="separator:aec75068f761f7105e5d87f9a7dc2ede2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49ec1f2899fa65cc4abd5e1aaa1dfb5c" id="r_a49ec1f2899fa65cc4abd5e1aaa1dfb5c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a49ec1f2899fa65cc4abd5e1aaa1dfb5c">autoset</a> = false</td></tr>
+<tr class="separator:a49ec1f2899fa65cc4abd5e1aaa1dfb5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Основной класс персептрона. </p>
@@ -158,14 +166,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a90c32fc3d02a099d1e0fa39705d11d56" name="a90c32fc3d02a099d1e0fa39705d11d56"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90c32fc3d02a099d1e0fa39705d11d56">&#9670;&#160;</a></span>ForwardFeed()</h2>
+<a id="a5937725e32df92ed792fe2cf56d8c765" name="a5937725e32df92ed792fe2cf56d8c765"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5937725e32df92ed792fe2cf56d8c765">&#9670;&#160;</a></span>ForwardFeed()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double Network::ForwardFeed </td>
+          <td class="memname">int Network::ForwardFeed </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -346,6 +354,35 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a49ec1f2899fa65cc4abd5e1aaa1dfb5c" name="a49ec1f2899fa65cc4abd5e1aaa1dfb5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49ec1f2899fa65cc4abd5e1aaa1dfb5c">&#9670;&#160;</a></span>autoset</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Network::autoset = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aec75068f761f7105e5d87f9a7dc2ede2" name="aec75068f761f7105e5d87f9a7dc2ede2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec75068f761f7105e5d87f9a7dc2ede2">&#9670;&#160;</a></span>WEIGHTPATH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Network::WEIGHTPATH = &quot;../data/weights.txt&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

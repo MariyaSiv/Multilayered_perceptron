@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['saveweights_0',['SaveWeights',['../classNetwork.html#af3f5ce6972652c5aeb2abdaddae671dd',1,'Network']]],
-  ['searchmaxindex_1',['SearchMaxIndex',['../classNetwork.html#a78fc0626d6b745842375101ad366d980',1,'Network']]],
-  ['set_2',['set',['../classActivateFunction.html#a34859ab837b7dd029e76e2348674c796',1,'ActivateFunction']]],
-  ['setinput_3',['SetInput',['../classNetwork.html#aae3170236bbc334e9027a37064b56e58',1,'Network']]],
-  ['sumvector_4',['SumVector',['../classMatrix.html#a1c2d01206a6d93bd2c22e9fe94b29a53',1,'Matrix']]]
+  ['rand_0',['Rand',['../classMatrix.html#aedd6f31bc1a30a2c98cee0dc3d9b89f4',1,'Matrix']]],
+  ['readdata_1',['ReadData',['../Reader_8cpp.html#a6c0103c119bd38f3a85b69f741fcfc77',1,'ReadData(string path, const data_Network &amp;data_NW, int &amp;examples):&#160;Reader.cpp'],['../Reader_8h.html#a8c86aac221038569426baa4270f216ff',1,'ReadData(string path, const data_Network &amp;data_NW, int &amp;len):&#160;Reader.cpp']]],
+  ['readdatanetwork_2',['ReadDataNetwork',['../Reader_8cpp.html#a9e6ff466db1f9744a07b129363e9eee9',1,'ReadDataNetwork(string path):&#160;Reader.cpp'],['../Reader_8h.html#a9e6ff466db1f9744a07b129363e9eee9',1,'ReadDataNetwork(string path):&#160;Reader.cpp']]],
+  ['readweights_3',['ReadWeights',['../classNetwork.html#a93eeaee5cd56f5cdaf8c3783c7433006',1,'Network']]]
 ];

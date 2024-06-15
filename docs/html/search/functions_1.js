@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['forwardfeed_0',['ForwardFeed',['../classNetwork.html#a90c32fc3d02a099d1e0fa39705d11d56',1,'Network']]]
+  ['backpropogation_0',['BackPropogation',['../classNetwork.html#a5289a4fb8b298fb6c7553bd98750fb49',1,'Network']]]
 ];

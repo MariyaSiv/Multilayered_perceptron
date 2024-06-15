@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['activatefunction_2ecpp_0',['ActivateFunction.cpp',['../ActivateFunction_8cpp.html',1,'']]],
-  ['activatefunction_2eh_1',['ActivateFunction.h',['../ActivateFunction_8h.html',1,'']]]
+  ['main_2ecpp_0',['main.cpp',['../main_8cpp.html',1,'']]],
+  ['matrix_2ecpp_1',['Matrix.cpp',['../Matrix_8cpp.html',1,'']]],
+  ['matrix_2eh_2',['Matrix.h',['../Matrix_8h.html',1,'']]]
 ];

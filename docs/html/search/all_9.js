@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['pixels_0',['pixels',['../structdata__info.html#a4f3467e8b98c67db4d196df4840f7697',1,'data_info']]],
-  ['printconfig_1',['PrintConfig',['../classNetwork.html#a29980dac183a16235e95dc5411523072',1,'Network']]],
-  ['printvalues_2',['PrintValues',['../classNetwork.html#a683c63c3668a05a61f3f8dc3436898b1',1,'Network']]]
+  ['operator_28_29_0',['operator()',['../classMatrix.html#a83a1c6c6f2f7c88a72a7ee98cae90c24',1,'Matrix::operator()()'],['../structconfusion__Matrix.html#a4e494958dc36fd120c93fccde049e6be',1,'confusion_Matrix::operator()()']]],
+  ['operator_3c_3c_1',['operator&lt;&lt;',['../classMatrix.html#a5acbf9f1ba6d871be2ad3a0cdadf8815',1,'Matrix::operator&lt;&lt;'],['../Matrix_8cpp.html#a5acbf9f1ba6d871be2ad3a0cdadf8815',1,'operator&lt;&lt;():&#160;Matrix.cpp']]],
+  ['operator_3e_3e_2',['operator&gt;&gt;',['../classMatrix.html#a0f8f162e6beb0d12bc75c4642471bca9',1,'Matrix::operator&gt;&gt;'],['../Matrix_8cpp.html#a0f8f162e6beb0d12bc75c4642471bca9',1,'operator&gt;&gt;():&#160;Matrix.cpp']]]
 ];

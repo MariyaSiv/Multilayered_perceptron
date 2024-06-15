@@ -98,18 +98,32 @@ $(function(){initNavTree('main_8cpp.html',''); initResizable(true); });
 
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">main.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="Network_8h_source.html">Network.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Reader_8h_source.html">Reader.h</a>&quot;</code><br />
 <code>#include &lt;cmath&gt;</code><br />
+<code>#include &lt;iomanip&gt;</code><br />
+<code>#include &lt;chrono&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
 <tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ac0b5165a6792fb3a318c666eec068b4a" id="r_ac0b5165a6792fb3a318c666eec068b4a"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0b5165a6792fb3a318c666eec068b4a">N_EPOCH</a> = 10</td></tr>
+<tr class="separator:ac0b5165a6792fb3a318c666eec068b4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ce18b40ce7f7605ad27e2faea0ec057" id="r_a6ce18b40ce7f7605ad27e2faea0ec057"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ce18b40ce7f7605ad27e2faea0ec057">N_TRAINDATASET</a> = 60000</td></tr>
+<tr class="separator:a6ce18b40ce7f7605ad27e2faea0ec057"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf915e92a8c17299fe7689d0fa641b95" id="r_acf915e92a8c17299fe7689d0fa641b95"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf915e92a8c17299fe7689d0fa641b95">N_TESTDATASET</a> = 10000</td></tr>
+<tr class="separator:acf915e92a8c17299fe7689d0fa641b95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cff5e2a66f3e67ed2607c3a7164eb03" id="r_a4cff5e2a66f3e67ed2607c3a7164eb03"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4cff5e2a66f3e67ed2607c3a7164eb03">N_MYDATASET</a> = 10</td></tr>
+<tr class="separator:a4cff5e2a66f3e67ed2607c3a7164eb03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
@@ -123,6 +137,63 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ac0b5165a6792fb3a318c666eec068b4a" name="ac0b5165a6792fb3a318c666eec068b4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0b5165a6792fb3a318c666eec068b4a">&#9670;&#160;</a></span>N_EPOCH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int N_EPOCH = 10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4cff5e2a66f3e67ed2607c3a7164eb03" name="a4cff5e2a66f3e67ed2607c3a7164eb03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cff5e2a66f3e67ed2607c3a7164eb03">&#9670;&#160;</a></span>N_MYDATASET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int N_MYDATASET = 10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acf915e92a8c17299fe7689d0fa641b95" name="acf915e92a8c17299fe7689d0fa641b95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf915e92a8c17299fe7689d0fa641b95">&#9670;&#160;</a></span>N_TESTDATASET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int N_TESTDATASET = 10000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6ce18b40ce7f7605ad27e2faea0ec057" name="a6ce18b40ce7f7605ad27e2faea0ec057"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ce18b40ce7f7605ad27e2faea0ec057">&#9670;&#160;</a></span>N_TRAINDATASET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int N_TRAINDATASET = 60000</td>
         </tr>
       </table>
 </div><div class="memdoc">

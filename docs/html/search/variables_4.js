@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['size_0',['size',['../structdata__Network.html#a89e15d6ea83d6eb4cab864db3fc5e593',1,'data_Network']]]
+  ['n_5fepoch_0',['N_EPOCH',['../main_8cpp.html#ac0b5165a6792fb3a318c666eec068b4a',1,'main.cpp']]],
+  ['n_5fmydataset_1',['N_MYDATASET',['../main_8cpp.html#a4cff5e2a66f3e67ed2607c3a7164eb03',1,'main.cpp']]],
+  ['n_5ftestdataset_2',['N_TESTDATASET',['../main_8cpp.html#acf915e92a8c17299fe7689d0fa641b95',1,'main.cpp']]],
+  ['n_5ftraindataset_3',['N_TRAINDATASET',['../main_8cpp.html#a6ce18b40ce7f7605ad27e2faea0ec057',1,'main.cpp']]]
 ];

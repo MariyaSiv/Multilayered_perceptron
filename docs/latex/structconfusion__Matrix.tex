@@ -1,0 +1,76 @@
+\doxysection{confusion\+\_\+\+Matrix Struct Reference}
+\hypertarget{structconfusion__Matrix}{}\label{structconfusion__Matrix}\index{confusion\_Matrix@{confusion\_Matrix}}
+
+
+Структура для создания confusion matrix.  
+
+
+
+
+{\ttfamily \#include $<$Utils.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{structconfusion__Matrix_a5fd0d58424acd9ac8490acad4c36c973}{Init}} ()
+\item 
+int \& \mbox{\hyperlink{structconfusion__Matrix_a4e494958dc36fd120c93fccde049e6be}{operator()}} (int i, int j)
+\item 
+void \mbox{\hyperlink{structconfusion__Matrix_a79cd9345c41a8de2de5a4b4f39708b74}{Print}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{structconfusion__Matrix_aeffa4e8b116b4cbcf6cdf3ddf35ed88d}{matrix}} \mbox{[}10\mbox{]}\mbox{[}10\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Структура для создания confusion matrix. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{structconfusion__Matrix_a5fd0d58424acd9ac8490acad4c36c973}\index{confusion\_Matrix@{confusion\_Matrix}!Init@{Init}}
+\index{Init@{Init}!confusion\_Matrix@{confusion\_Matrix}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily \label{structconfusion__Matrix_a5fd0d58424acd9ac8490acad4c36c973} 
+void confusion\+\_\+\+Matrix\+::\+Init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Инициализация confusion matrix\Hypertarget{structconfusion__Matrix_a4e494958dc36fd120c93fccde049e6be}\index{confusion\_Matrix@{confusion\_Matrix}!operator()@{operator()}}
+\index{operator()@{operator()}!confusion\_Matrix@{confusion\_Matrix}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily \label{structconfusion__Matrix_a4e494958dc36fd120c93fccde049e6be} 
+int \& confusion\+\_\+\+Matrix\+::operator() (\begin{DoxyParamCaption}\item[{int}]{i}{, }\item[{int}]{j}{}\end{DoxyParamCaption})}
+
+Перезагрузка оператора () для удобного доступа к элементам матрицы.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i} & Номер строки \\
+\hline
+\mbox{\texttt{ in}}  & {\em j} & Номер столбца\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ссылку на элемент матрицы
+\end{DoxyReturn}
+\Hypertarget{structconfusion__Matrix_a79cd9345c41a8de2de5a4b4f39708b74}\index{confusion\_Matrix@{confusion\_Matrix}!Print@{Print}}
+\index{Print@{Print}!confusion\_Matrix@{confusion\_Matrix}}
+\doxysubsubsection{\texorpdfstring{Print()}{Print()}}
+{\footnotesize\ttfamily \label{structconfusion__Matrix_a79cd9345c41a8de2de5a4b4f39708b74} 
+void confusion\+\_\+\+Matrix\+::\+Print (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Печать confusion matrix
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{structconfusion__Matrix_aeffa4e8b116b4cbcf6cdf3ddf35ed88d}\index{confusion\_Matrix@{confusion\_Matrix}!matrix@{matrix}}
+\index{matrix@{matrix}!confusion\_Matrix@{confusion\_Matrix}}
+\doxysubsubsection{\texorpdfstring{matrix}{matrix}}
+{\footnotesize\ttfamily \label{structconfusion__Matrix_aeffa4e8b116b4cbcf6cdf3ddf35ed88d} 
+int confusion\+\_\+\+Matrix\+::matrix\mbox{[}10\mbox{]}\mbox{[}10\mbox{]}}
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/mariya/\+Documents/\+Uni/\+Algorithms2/\+Project/src/\mbox{\hyperlink{Utils_8h}{Utils.\+h}}\item 
+/home/mariya/\+Documents/\+Uni/\+Algorithms2/\+Project/src/\mbox{\hyperlink{Utils_8cpp}{Utils.\+cpp}}\end{DoxyCompactItemize}

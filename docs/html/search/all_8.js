@@ -1,6 +1,10 @@
 var searchData=
 [
-  ['operator_28_29_0',['operator()',['../classMatrix.html#a83a1c6c6f2f7c88a72a7ee98cae90c24',1,'Matrix']]],
-  ['operator_3c_3c_1',['operator&lt;&lt;',['../classMatrix.html#a5acbf9f1ba6d871be2ad3a0cdadf8815',1,'Matrix::operator&lt;&lt;'],['../Matrix_8cpp.html#a5acbf9f1ba6d871be2ad3a0cdadf8815',1,'operator&lt;&lt;():&#160;Matrix.cpp']]],
-  ['operator_3e_3e_2',['operator&gt;&gt;',['../classMatrix.html#a0f8f162e6beb0d12bc75c4642471bca9',1,'Matrix::operator&gt;&gt;'],['../Matrix_8cpp.html#a0f8f162e6beb0d12bc75c4642471bca9',1,'operator&gt;&gt;():&#160;Matrix.cpp']]]
+  ['n_5fepoch_0',['N_EPOCH',['../main_8cpp.html#ac0b5165a6792fb3a318c666eec068b4a',1,'main.cpp']]],
+  ['n_5fmydataset_1',['N_MYDATASET',['../main_8cpp.html#a4cff5e2a66f3e67ed2607c3a7164eb03',1,'main.cpp']]],
+  ['n_5ftestdataset_2',['N_TESTDATASET',['../main_8cpp.html#acf915e92a8c17299fe7689d0fa641b95',1,'main.cpp']]],
+  ['n_5ftraindataset_3',['N_TRAINDATASET',['../main_8cpp.html#a6ce18b40ce7f7605ad27e2faea0ec057',1,'main.cpp']]],
+  ['network_4',['Network',['../classNetwork.html',1,'']]],
+  ['network_2ecpp_5',['Network.cpp',['../Network_8cpp.html',1,'']]],
+  ['network_2eh_6',['Network.h',['../Network_8h.html',1,'']]]
 ];

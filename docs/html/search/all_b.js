@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['saveweights_0',['SaveWeights',['../classNetwork.html#af3f5ce6972652c5aeb2abdaddae671dd',1,'Network']]],
-  ['searchmaxindex_1',['SearchMaxIndex',['../classNetwork.html#a78fc0626d6b745842375101ad366d980',1,'Network']]],
-  ['set_2',['set',['../classActivateFunction.html#a34859ab837b7dd029e76e2348674c796',1,'ActivateFunction']]],
-  ['setinput_3',['SetInput',['../classNetwork.html#aae3170236bbc334e9027a37064b56e58',1,'Network']]],
-  ['sigmoid_4',['sigmoid',['../ActivateFunction_8h.html#a7ca203c77ee11fc0157a88dfd4e5f245a208ca9f731c1a1febf7d32a69b0f97db',1,'ActivateFunction.h']]],
-  ['size_5',['size',['../structdata__Network.html#a89e15d6ea83d6eb4cab864db3fc5e593',1,'data_Network']]],
-  ['sumvector_6',['SumVector',['../classMatrix.html#a1c2d01206a6d93bd2c22e9fe94b29a53',1,'Matrix']]]
+  ['rand_0',['Rand',['../classMatrix.html#aedd6f31bc1a30a2c98cee0dc3d9b89f4',1,'Matrix']]],
+  ['readdata_1',['ReadData',['../Reader_8cpp.html#a6c0103c119bd38f3a85b69f741fcfc77',1,'ReadData(string path, const data_Network &amp;data_NW, int &amp;examples):&#160;Reader.cpp'],['../Reader_8h.html#a8c86aac221038569426baa4270f216ff',1,'ReadData(string path, const data_Network &amp;data_NW, int &amp;len):&#160;Reader.cpp']]],
+  ['readdatanetwork_2',['ReadDataNetwork',['../Reader_8cpp.html#a9e6ff466db1f9744a07b129363e9eee9',1,'ReadDataNetwork(string path):&#160;Reader.cpp'],['../Reader_8h.html#a9e6ff466db1f9744a07b129363e9eee9',1,'ReadDataNetwork(string path):&#160;Reader.cpp']]],
+  ['reader_2ecpp_3',['Reader.cpp',['../Reader_8cpp.html',1,'']]],
+  ['reader_2eh_4',['Reader.h',['../Reader_8h.html',1,'']]],
+  ['readweights_5',['ReadWeights',['../classNetwork.html#a93eeaee5cd56f5cdaf8c3783c7433006',1,'Network']]],
+  ['relu_6',['ReLU',['../Utils_8h.html#a7ca203c77ee11fc0157a88dfd4e5f245ac2141c33518a5aa5233f0db6a9e163c8',1,'Utils.h']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['pixels_0',['pixels',['../structdata__info.html#a4f3467e8b98c67db4d196df4840f7697',1,'data_info']]]
+  ['matrix_0',['matrix',['../structconfusion__Matrix.html#aeffa4e8b116b4cbcf6cdf3ddf35ed88d',1,'confusion_Matrix']]]
 ];
